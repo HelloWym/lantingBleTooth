@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        style="@style/TitBarRelativeStl">
+        <LinearLayout
+            android:id="@+id/backLL"
+            style="@style/TitBarLinearStl">
+            <ImageView
+                style="@style/TitBarImageStl"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/TV1"
+            android:text="蓝牙列表"
+            style="@style/TitBarTextStl"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/rv_main">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
